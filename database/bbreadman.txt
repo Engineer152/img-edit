@@ -1,0 +1,5 @@
+{
+  "welcome":{
+    "background":"https://i.ibb.co/Y7hhJZ9/bread-rank.png"
+  }
+}
