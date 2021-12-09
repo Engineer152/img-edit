@@ -26,7 +26,7 @@ def welcome_link():
   if 'color' in request.args:
     color=request.args.get('color')
   welcome(server,user,pfp,sbg,color)
-  return send_file(f"./out/{server}_{user}.png",mimetype='image/png')
+  return send_file(f"./out/{server}.png",mimetype='image/png')
 
 def run():
   app.run(host="0.0.0.0", port=80)

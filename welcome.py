@@ -22,8 +22,8 @@ def welcome(server,user,pfp,sbg,color):
     elif pfp=='':
       im2=Image.open('./database/default.png')
     back_im = tbg.copy()
-    x=int(1050-257)
-    y=int((900/2)-385)
+    x=int(1050-255)
+    y=int((900/2)-383)
     im2=im2.resize((200,200))
     back_im.paste(im2, (x,y))
     back_im.paste(im1, (0,0),im1)
@@ -42,6 +42,6 @@ def welcome(server,user,pfp,sbg,color):
 
     text_im.text((45,45), title_text, color, font=title_font)
     text_im.text((45,125), user_txt, color, font=user_font)
-    back_im.save(f'./out/{server}_{user}.png')
+    back_im.save(f'./out/{server}.png')
     # file.close()
     return
